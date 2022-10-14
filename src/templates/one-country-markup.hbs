@@ -1,0 +1,14 @@
+<div class='list'><img
+    src={{flags.svg}}
+    alt='flag of {{name.common}}'
+    width='45px'
+    height='27px'
+  />
+  <h2 class='country-title'>{{name.common}}</h2></div>
+<ul>
+  <li><span class='item'>Capital:</span> {{capital}} </li>
+  <li><span class='item'>Population:</span> {{population}}</li>
+  <li><span class='item'>Languages:</span>
+    {{#each languages}}{{this}}{{#unless @last}},
+      {{/unless}}{{/each}}</li>
+</ul>
